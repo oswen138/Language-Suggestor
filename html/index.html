@@ -22,90 +22,67 @@
       <img src="css/img/python.JPG" alt="Python" style="width:50%">
     </div>
     <div class="column">
-      <img src="css/img/ruby.JPG" alt="Ruby" style="widows:50%">
+      <img src="css/img/ruby.JPG" alt="Ruby" style="width: 120px">
     </div>
     <div class="column">
       <img src="css/img/swift.JPG" alt="Swift" style="width:70%">
     </div>
     <div class="column">
-      <img src="css/img/go.JPG" alt="Swift" style="width:70%">
+      <img src="css/img/go.JPG" alt="Swift" style="width:90%">
     </div>
   </div>
- 
-
-
-
-
-
 <br>
   <div class="container">
       <div>
         <div class="align-items-md-center">
           <form>
-          <h3>Do you like donuts?</h3>
-          <select class="form-control" id="color">
-            <option value="blue">Blue</option>
-            <option value="red">Red</option>
-            <option value="yellow">Yellow</option>
-            <option value="green">Green</option>
+          <h4>Do you like donuts?</h4>
+          <select class="form-control" id="donut">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Maybe">Maybe</option>
           </select>
           <br>
-          <h5>What is your favorite food?</h5>
-          <select class="form-control" id="food">
-            <option value="pizza">Pizza</option>
-            <option value="salad">Salad</option>
-            <option value="turkeysandwich">Turkey Sandwich</option>
-            <option value="hotdog">Hot Dog</option>
+          <h5>Do you prefer iOS or Android operating systems?</h5>
+          <select class="form-control" id="system">
+            <option value="iOS">iOS</option>
+            <option value="Android">Android</option>
+            <option value="None">No preference</option>
           </select>
           <br>
+          <h5>Do you like neat and clean syntax and code that is easy to modify but no classes?</h5>
+          <select class="form-control" id="system">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+            <option value="Maybe">Maybe but I like to use classes and inheritance</option>
+          </select>
+
+          
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="chocolate" checked>
+              Chocolate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="vanilla">
+              Vanilla
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="cookiesandcream">
+              Cookies & Cream
+            </label>
+          </div>
+
+
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
 
-      <div class="radio">
-        <label>
-          <input type="radio" name="flavor" value="chocolate" checked>
-          Chocolate
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="flavor" value="vanilla">
-          Vanilla
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="flavor" value="cookiesandcream">
-          Cookies & Cream
-        </label>
-      </div>
-
-
-      <h3>Friends Quiz</h3>
-    </div>
-    <div class="align-items-md-center">
-      <form>
-        <h5>What is your favorite color?</h5>
-        <select class="form-control" id="color">
-          <option value="blue">Blue</option>
-          <option value="red">Red</option>
-          <option value="yellow">Yellow</option>
-          <option value="green">Green</option>
-        </select>
-        <br>
-        <h5>What is your favorite food?</h5>
-        <select class="form-control" id="food">
-          <option value="pizza">Pizza</option>
-          <option value="salad">Salad</option>
-          <option value="turkeysandwich">Turkey Sandwich</option>
-          <option value="hotdog">Hot Dog</option>
-        </select>
-        <br>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
       <br>
-      <hr>
-      <h3>Which Friends character are you?:</h3>
+      <h3>You are suited for:</h3>
 
       <h5 id="answer"></h5>
       <img id="friendpicture" class="setwidth" src="" alt="">
