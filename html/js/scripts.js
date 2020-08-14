@@ -13,10 +13,14 @@ $(document).ready(function() {
     if (donut === "1" + system === "1" + syntax === "1" + library === "1" + speed === "1" + error === "1" + color === "blue" <=1) {
       $('#answer').text("Go");
       $("#img3").show();
-    }
-      else if (donut === "2" + system === "2" + syntax === "2" + library === "2" + speed === "2" + error === "2" + color === "orange" <=2) {
+      }
+      else if (donut === "2" + system === "2" + syntax === "2" + library === "2" + speed === "2" + error === "2" + color === "orange" ==0) {
       $('#answer').text("Ruby");
       $("#img2").show();
+      }
+      else if (donut === "3" + system === "3" + syntax === "3" + library === "3" + speed === "3" + error === "3" + color === "blue") {
+        $('#answer').text("Python");
+        $("#img2").show();
       }
       else {
       $('#answer').text("none suit you");
