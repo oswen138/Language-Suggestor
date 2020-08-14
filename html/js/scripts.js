@@ -1,6 +1,6 @@
 //function to calculate the result of the survey form
 $(document).ready(function() {
-  $("form").submit(function () {
+  $("form").submit(function(event) {
 
     const donut = parseInt($("donut").val());
     const system = parseInt($("#system").val());
@@ -14,7 +14,7 @@ $(document).ready(function() {
       $('#answer').text("Go");
       $("#img3").show();
       }
-      else if (donut === "2" + system === "2" + syntax === "2" + library === "2" + speed === "2" + error === "2" + color === "orange" ==0) {
+      else if (donut === "2" & system === "2" + syntax === "2" + library === "2" + speed === "2" + error === "2" + color === "orange") {
       $('#answer').text("Ruby");
       $("#img2").show();
       }
@@ -22,8 +22,13 @@ $(document).ready(function() {
         $('#answer').text("Python");
         $("#img2").show();
       }
+      else if (donut === "3" + system === "3" + syntax === "3" + library === "3" + speed === "3" + error === "3" + color === "blue") {
+        $('#answer').text("Swift");
+        $("#img4").show();
+      }
       else {
       $('#answer').text("none suit you");
+      $("#img5").show();
       }
     event.preventDefault();
   });
