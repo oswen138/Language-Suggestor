@@ -9,31 +9,25 @@ $(document).ready(function () {
     const error = $("input#error").val();
     const color = $("input:radio[name=color]:checked").val();
    
-    if (color === 'blue' || food === 'hotdog') {
-      //alert('in blue');
+    $('input[type=radio][name="color"]').change(function () {
+      const color = $("input[type=radio][name=color]:checked").val();
+      if (color === "Green") {
+        document.getElementsByClassName("this-is-a-class").show();
+        $('.elephant').hide();
+        $('.lion').hide();
+      } else if (animal === "Elephant") {
+        $('.giraffe').hide();
+        $('.elephant').show();
+        $('.lion').hide();
+      } else {
+        $('.giraffe').hide();
+        $('.elephant').hide();
+        $('.lion').show();
+        //$('.hide').not('.lion').hide();
+      }
+    });
+  });
 
-      $('#answer').text("Chandler");
-      $('#friendpicture').attr('src', "css/img");
-    }
-    else if (color === 'red' && food === 'salad') {
-      //alert('in red');
-      $('#answer').text("Phoebe");
-      $('#friendpicture').attr('src', "https://i.insider.com/5ab53db4095b111a068b45b6?width=1100&format=jpeg&auto=webp");
-    }
-    else if (color === 'yellow' || food === 'turkeysandwich') {
-      // alert('in yellow');
-      $('#answer').text("Ross");
-      $('#friendpicture').attr('src', "https://vignette.wikia.nocookie.net/friends/images/0/0b/RossGeller.jpg/revision/latest/top-crop/width/360/height/360?cb=20180424154547");
-    }
-    else {
-      //alert('in else');
-      $('#answer').text("Monica");
-      $('#friendpicture').attr('src', "https://upload.wikimedia.org/wikipedia/en/d/d0/Courteney_Cox_as_Monica_Geller.jpg");
-    }
-
-
-    const flavor = $("input:radio[name=flavor]:checked").val();
-    
     parse int
 
   });
