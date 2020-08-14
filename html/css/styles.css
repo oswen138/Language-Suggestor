@@ -1,0 +1,9 @@
+.jumbotron {
+  background-image: url('img/header.JPG'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+.display-3 {
+  font-size: 58px ;
+  text-align: center;
+}
