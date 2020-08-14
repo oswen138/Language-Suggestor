@@ -1,5 +1,50 @@
+//function to calculate the result of the survey form
 $(document).ready(function () {
   $("form").submit(function () {
+
+  function result() {
+    //initialize variables for each answer
+    var d1
+    var d2
+    var d3
+    var sys1
+    var sys2
+    var sys3
+    var c1
+    var c2
+    var c3
+    var l1
+    var l2
+    var l3
+    var s1
+    var s2
+    var s3
+    var e1
+    var e2
+    var e3
+    var red
+    var orange 
+    var blue
+
+    //list of selectors on the page
+    var choices = document.getElementsByName('')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     event.preventDefault();
     const donut = $("input#donut").val();
     const system = $("input#system").val();
