@@ -7,19 +7,19 @@ $(document).ready(function() {
     const syntax = parseInt($("#syntax").val());
     const library = parseInt($("#library").val());
     const speed = parseInt($("#speed").val());
-    const errpr = parseInt($("#error").val());
+    const error = parseInt($("#error").val());
     const color = parseInt($("input:radio[name=color]:checked").val());
 
     if (donut === "1" + system === "1" + syntax === "1" + library === "1" + speed === "1" + error === "1" + color === "blue" <=1) {
-      $('#answer').text("Python");
-      $("#img1").show();
+      $('#answer').text("Go");
+      $("#img3").show();
     }
-      else if (donut === "2" + system === "2" + syntax === "2" + library === "2" + speed === "2" + error === "2" + color === "blue" >=3) {
-        $('#answer').text("animal");
-        $("#img2").show();
+      else if (donut === "2" + system === "2" + syntax === "2" + library === "2" + speed === "2" + error === "2" + color === "orange" <=2) {
+      $('#answer').text("Ruby");
+      $("#img2").show();
       }
       else {
-        $('#answer').text("none suit you");
+      $('#answer').text("none suit you");
       }
     event.preventDefault();
   });
