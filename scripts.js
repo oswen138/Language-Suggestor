@@ -1,79 +1,28 @@
 //function to calculate the result of the survey form
-$(document).ready(function () {
+$(document).ready(function() {
   $("form").submit(function () {
 
-  function result() {
-    //initialize variables for each answer
-    var d1
-    var d2
-    var d3
-    var sys1
-    var sys2
-    var sys3
-    var c1
-    var c2
-    var c3
-    var l1
-    var l2
-    var l3
-    var s1
-    var s2
-    var s3
-    var e1
-    var e2
-    var e3
-    var red
-    var orange 
-    var blue
+    const donut = parseInt($("#donut").val());
+    const system = parseInt($("#system").val());
+    const syntax = parseInt($("#syntax").val());
+    const library = parseInt($("#library").val());
+    const speed = parseInt($("#speed").val());
+    const error = parseInt($("#error").val());
+    const color = parseInt($("input:radio[name=color]:checked").val());
 
-    //list of selectors on the page
-    var choices = document.getElementsByName('')
+    if (donut === 'd1' && system ==='sys1' && syntax === 'c1' && library ==='l1' && speed === 's1' && error === 'e1' && color === 'red') {
+      $('#answer').text("Python");
+      $('#picture').attr('src', "https://i.insider.com/5ab53db4095b111a068b45b6?width=1100&format=jpeg&auto=webp");
 
+    } else {
+      $('#answer').text("Ruby");
+      $('#picture').attr('src', "https://upload.wikimedia.org/wikipedia/en/d/d0/Courteney_Cox_as_Monica_Geller.jpg");
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    event.preventDefault();
-    const donut = $("input#donut").val();
-    const system = $("input#system").val();
-    const classes = $("input#classes").val();
-    const libraries = $("input#classes").val();
-    const speed = $("input#speed").val();
-    const error = $("input#error").val();
-    const color = $("input:radio[name=color]:checked").val();
-   
-    $('input[type=radio][name="color"]').change(function () {
-      const color = $("input[type=radio][name=color]:checked").val();
-      if (color === "Green") {
-        document.getElementsByClassName("this-is-a-class").show();
-        $('.elephant').hide();
-        $('.lion').hide();
-      } else if (animal === "Elephant") {
-        $('.giraffe').hide();
-        $('.elephant').show();
-        $('.lion').hide();
-      } else {
-        $('.giraffe').hide();
-        $('.elephant').hide();
-        $('.lion').show();
-        //$('.hide').not('.lion').hide();
-      }
-    });
-  });
-
-    parse int
-
+    event.preventDefault
   });
 });
+
+
+
+
