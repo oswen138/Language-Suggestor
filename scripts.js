@@ -1,14 +1,19 @@
 $(document).ready(function () {
   $("form").submit(function () {
     event.preventDefault();
-    const color = $("#color").val();
-    const food = $("#food").val();
-    //alert(food +' ' + color);
+    const donut = $("input#donut").val();
+    const system = $("input#system").val();
+    const classes = $("input#classes").val();
+    const libraries = $("input#classes").val();
+    const speed = $("input#speed").val();
+    const error = $("input#error").val();
+    const color = $("input:radio[name=color]:checked").val();
+   
     if (color === 'blue' || food === 'hotdog') {
       //alert('in blue');
 
       $('#answer').text("Chandler");
-      $('#friendpicture').attr('src', "https://pmctvline2.files.wordpress.com/2017/05/friends-chandler-video.jpg");
+      $('#friendpicture').attr('src', "css/img");
     }
     else if (color === 'red' && food === 'salad') {
       //alert('in red');
@@ -27,8 +32,9 @@ $(document).ready(function () {
     }
 
 
-
-
+    const flavor = $("input:radio[name=flavor]:checked").val();
+    
+    parse int
 
   });
 });
