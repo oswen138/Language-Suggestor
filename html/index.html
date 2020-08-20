@@ -33,83 +33,82 @@
   </div>
 <br>
   <div class="container">
-      <div>
-        <div class="align-items-md-center">
-          <form>
-          <h4>Do you like donuts?</h4>
-          <select class="form-control" id="donut">
-            <option value="1" name="q1">Yes</option>
-            <option value="2" name="q1">No</option>
-            <option value="3" name="q1">Maybe</option>
-          </select>
-          <br>
-          <h4>Do you prefer iOS or Android operating systems?</h4>
-          <select class="form-control" id="system">
-            <option value="1" name="q2">iOS</option>
-            <option value="2" name="q2">Android</option>
-            <option value="3" name="q2">No preference</option>
-          </select>
-          <br>
-          <h4>Do you like neat and clean syntax and code that is easy to modify but no classes?</h4>
-          <select class="form-control" id="syntax">
-            <option value="1" name="q3">No</option>
-            <option value="2" name="q3">Yes</option>
-            <option value="3" name="q3">Maybe but I like to use classes and inheritance</option>
-          </select>
-          <br>
-          <h4>Do you like the idea of utilizing dynamic libraries and speed?</h4>
-          <select class="form-control" id="library">
-            <option value="1" name="q4">No</option>
-            <option value="2" name="q4">Yes</option>
-            <option value="3" name="q4">Maybe but I like to use classes and inheritance</option>
-          </select>
-          <br>
-          <h4>Do you dislike slow runtime speeds when there is large-scale traffic?</h4>
-          <select class="form-control" id="speed">
-            <option value="1" name="q5">No</option>
-            <option value="2" name="q5">Yes</option>
-            <option value="3" name="q5">Maybe</option>
-          </select>
-          <br>
-          <h4>Do you mind if the language has a lack of ability to catch semantic errors upfront but has terrific overall readability?</h4>
-          <select class="form-control" id="error">
-            <option value="1" name="q6">No</option>
-            <option value="2" name="q6">Yes</option>
-            <option value="3" name="q6">Maybe</option>
-          </select>
-          <br>
-          <h4>Choose a color:</h4>
-          <div class="radio">
-            <label>
-              <input type="radio" name="color" value="red" checked>
-              Red
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="color" value="orange">
-              Orange
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="color" value="blue">
-              Blue
-            </label>
-          </div>
-          <br>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+    <div class="align-items-md-center">
+      <form id="form">
+      <h4>Do you like donuts?</h4>
+      <select class="form-control" id="form1">
+        <option value="1" name="1">Yes</option>
+        <option value="2" name="2">No</option>
+        <option value="3" name="2">Maybe</option>
+      </select>
       <br>
-      <h4>You are suited for:</h4>
-    </div>  
-    <div class="container">
-      <h5 id="answer"></h5>
-      <img src="css/img/python.JPG" id="img1" style="display:none;" />
-      <img src="css/img/ruby.JPG" id="img2" style="display:none;" />
-      <img src="css/img/go.JPG" id="img3" style="display:none;" />
-      <img src="css/img/swift.JPG" id="img4" style="display:none;" />
-      <img src="css/img/none.JPG" id="img5" style="display:none;" />
-    </div>
-
+      <h4>Do you prefer iOS or Android operating systems?</h4>
+      <select class="form-control" id="form2">
+        <option value="1" name="1">iOS</option>
+        <option value="2" name="2">Android</option>
+        <option value="3" name="3">No preference</option>
+      </select>
+      <br>
+      <h4>Do you like neat and clean syntax and code that is easy to modify but no classes?</h4>
+      <select class="form-control" id="form3">
+        <option value="1" name="1">No</option>
+        <option value="2" name="2">Yes</option>
+        <option value="3" name="3">Maybe but I like to use classes and inheritance</option>
+      </select>
+      <br>
+      <h4>Do you like the idea of utilizing dynamic libraries and speed?</h4>
+      <select class="form-control" id="form4">
+        <option value="1" name="1">No</option>
+        <option value="2" name="2">Yes</option>
+        <option value="3" name="3">Maybe but I like to use classes and inheritance</option>
+      </select>
+      <br>
+      <h4>Do you dislike slow runtime speeds when there is large-scale traffic?</h4>
+      <select class="form-control" id="form5">
+        <option value="1" name="1">No</option>
+        <option value="2" name="2">Yes</option>
+        <option value="3" name="3">Maybe</option>
+      </select>
+      <br>
+      <h4>Do you mind if the language has a lack of ability to catch semantic errors upfront but has terrific overall readability?</h4>
+      <select class="form-control" id="form6">
+        <option value="1" name="1">No</option>
+        <option value="2" name="2">Yes</option>
+        <option value="3" name="3">Maybe</option>
+      </select>
+      <br>
+      <h4>Choose a color:</h4>
+      <div class="radio">
+        <label>
+          <input type="radio" name="color" value="red" checked>
+          Red
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="color" value="orange">
+          Orange
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="color" value="blue">
+          Blue
+        </label>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  <br>
+  <h4>You are suited for:</h4>
+</div>  
+<div class="container">
+  <h5 id="answer"></h5>
+  <img src="css/img/python.JPG" id="img1" style="display:none;" />
+  <img src="css/img/ruby.JPG" id="img2" style="display:none;" />
+  <img src="css/img/go.JPG" id="img3" style="display:none;" />
+  <img src="css/img/swift.JPG" id="img4" style="display:none;" />
+  <img src="css/img/none.JPG" id="img5" style="display:none;" />
+</div>
+</body>
       
