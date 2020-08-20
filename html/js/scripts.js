@@ -21,6 +21,12 @@ $(document).ready(function() {
       $("#img1").show();
     } else if ((form1 === 1) && (form2 === 2) && (form3 === 3) && (form4 === 1 && (form5 === 2) && (form6 === 3)) ){
       $("#img1").show();
+    } else if ((form1 === 2) && (form2 === 3) && (form3 === 1) && (form4 === 3 && (form5 === 3) && (form6 === 2)) ){
+        $("#img4").show();
+    } else if ((form1 === 3) && (form2 === 3) && (form3 === 2) && (form4 === 2 && (form5 === 1) && (form6 === 1)) ){
+        $("#img4").show();
+    } else if ((form1 === 2) && (form2 === 1) && (form3 === 3) && (form4 === 1 && (form5 === 3) && (form6 === 3)) ){
+        $("#img2").show();
     } else {
       $("#img5").show();
     }
