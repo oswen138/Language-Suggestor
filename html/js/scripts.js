@@ -9,7 +9,6 @@ $(document).ready(function() {
     const form4 = parseInt($("select#form4").val());
     const form5 = parseInt($("select#form5").val());
     const form6 = parseInt($("select#form6").val());
-    const form7 = parseInt($("input:radio[name=color]:checked").val());
 
     if ((form1 === 1) && (form2 === 1) && (form3 === 1) && (form4 === 1) && (form5 === 1) && (form6 === 1)) {
       $("#img3").show();
