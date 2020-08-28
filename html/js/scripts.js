@@ -61,7 +61,6 @@ $(document).ready(function() {
     } else {
       $("#img5").show();
     }
-kkkkkkkkkk
   });
 });
 
