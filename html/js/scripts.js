@@ -59,9 +59,10 @@ $(document).ready(function() {
       $("#img3").hide()
       $("#img2").show();
     } else {
+      $("#img5").hide()
       $("#img5").show();
     }
-kkkkkkkkkk
+
   });
 });
 
