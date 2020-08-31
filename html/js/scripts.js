@@ -59,7 +59,12 @@ $(document).ready(function() {
       $("#img3").hide()
       $("#img2").show();
     } else {
-      $("#img5").hide()
+      $("#img1").hide()
+      $("#img2").hide()
+      $("#img3").hide()
+      $("#img4").hide()
       $("#img5").show();
     }
 
+  });
+});
